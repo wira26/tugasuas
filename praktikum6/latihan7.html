@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Denga Object checkbox</title>
+</head>
+<body>
+    <script>
+        function radio_box(form){
+            var ket = "";
+            var ket1= "";
+            if(form.bola.checked == true){
+                ket = " Nonton Bola"
+            }
+            if(form.tv.checked == true) {
+                ket1 = " Nonton TV"
+            }
+            alert('Hobby Anda ' + ket + "" + ket1)
+        }
+    </script>
+    <form>
+        <h1> Memasukkan data dengan objek checkbox</h1>
+        <p>
+            Hobby Anda :
+            <input type="checkbox" value="on" name="bola">Nonton Sepak Bola
+            <input type="checkbox" value="on" name="tv"> Nonton Televisi
+        </p>
+        <hr>
+        <p>
+            <input type="button" value="Ok" onclick="radio_box(this.form)">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>

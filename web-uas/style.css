@@ -1,0 +1,349 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+
+.layar-penuh {
+    width: 100%;
+
+}
+
+nav {
+    z-index: 100;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+
+nav .putih {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+    
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0 16PX 0 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+header .intro p {
+    font-size: 20px;
+}
+
+.tombol {
+    background-color: #c86b85;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+
+section {
+    padding: 50px 0px 50px 0px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section h3 ::after {
+    content: '';
+    border-bottom: 5px solid #c86b85;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+
+}
+
+#aboutus {
+    text-align: center;
+    margin-top: 50px;
+    height: 200px;
+}
+
+section p .ringkasan {
+    font-style: italic;
+    font-size: 20px;
+    color: #ababab;
+}
+
+section .conten-is {
+    font-size: 20px;
+    font-style: normal;
+
+}
+
+nav.putih {
+    background-color: white;
+}
+
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+  }
+
+nav .logo img.hitam {
+    display: none;
+}
+
+nav.putih ul li a {
+    color: #333;
+}
+
+#tugas h3 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+section#galery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+section#galery div {
+    padding: 10px;
+}
+
+section#galery div img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+section#galery div img:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+section.quotes {
+    background: url(asset/background-bromo.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 100px;
+}
+
+section.quotes .layar-dalam p {
+    display: inline;
+    background: url("asset/quote-icon.png") no-repeat;
+    padding: 40px;
+}
+
+footer {
+    padding: 50px 0 50px 0;
+    background-color: #343a40;
+    color: white;
+}
+
+footer .layar-dalam {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+footer .layar-dalam a{
+    color: #fff;
+    padding: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+
+footer .layar-dalam a img {
+    height: 30px;
+    width: 30px;   
+}
+
+footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+    text-align: justify;
+  }
+
+@media screen and (max-width: 991.98px){
+    .layar-dalam {
+        width: 90%;
+    }
+    nav .menu ul {
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav .menu ul li {
+        width: 100%;
+        border-bottom: 1px solid #ccc ;
+        background-color: #fff;
+        line-height: 40px;
+    }
+
+    nav .menu ul li a {
+        color: #333;
+    }
+
+    .tombol-menu {
+        display: flex;
+    }
+    
+}

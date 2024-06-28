@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            background-color: rgb(221, 218, 218);
+            border-radius: 10px;
+        }
+
+        input[type = text]{
+            width: 80%;
+            padding: 7px;
+            border: 2px solid maroon;
+        }
+
+        input {
+            margin-bottom: 20px;
+        }
+
+        input[type=submit] {
+            width: 80%;
+            padding: 8px;
+            cursor: pointer;
+            background-color: green;
+        }
+        .submit {
+            width: 80%;
+            padding: 7px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Membuat Form dengan HTML CSS</h1>
+    <div>
+        <fieldset>
+            <form>
+                <label for="firstName">Nama Depan</label><br>
+                <input type="text" placeholder="Nama Depan" required><br>
+
+
+                <label for="lastname">Nama Belakang</label><br>
+                <input type="text" placeholder="Nama Belakang"><br>
+
+                <label for="provinsi">Provinsi</label> <br>
+                <select class="submit">
+                    <option>Jawa Barat</option>
+                    <option>Jawa Tengah</option>
+                    <option>Jawa Timur</option>
+                </select> <br>
+                <input type="submit" value="kirim">
+        </form>  
+        </fieldset>     
+    </div>
+</body>
+</html>
